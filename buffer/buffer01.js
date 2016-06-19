@@ -1,5 +1,5 @@
 /**
- * Created by shaozhenxing on 16/6/19.
+ * Created by shaozhenxing on 16/6/19.  加油
  */
 var buf1 = new Buffer(6);
 buf1.fill(1)  //把buffer中所有元素置为1
@@ -13,4 +13,3 @@ console.log(buf2);
 var buf3 = new Buffer('abc');
 console.log(buf3);
 
-   

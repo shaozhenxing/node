@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>hello,你好</div>
+    <div id="clock"></div>
+    <script>
+        function clock(){
+            $.ajax({
+                url:'./clock',
+                success:function(res){
+                    console.log(res);
+                    $('#clock').html(res);
+                },
+                error:function(res){
+                    console.log(res);
+                }
+            })
+        }
+
+        setInterval(function(){
+            clock();
+        },1000);
+
+
+
+
+    </script>
+</body>
+</html>

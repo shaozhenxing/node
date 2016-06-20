@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/shaozhenxing/node/issues"
   },
-  "homepage": "https://github.com/shaozhenxing/node#readme"
+  "homepage": "https://github.com/shaozhenxing/node#readme",
+  "dependencies": {
+    "mime": "^1.3.4"
+  }
 }
